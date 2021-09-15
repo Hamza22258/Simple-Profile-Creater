@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Professional profile</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-image: url("./images/lrF7O8.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <body>
+    <section id="main">
+      <!--navigation-------------------------------->
+      <nav>
+        <img src="./images/photography logo designs (7).png" alt="" />
+        <h1 class="logo-heading">Transcend Developers</h1>
+      </nav>
+      
+  </section>
+
+    <!--name--------------------------->
+    <div class="name">
+      <div class="pic-place"><span>Picture here</span> </div>
+      <img src=""  id="profilePicture" />
+      <br />
+      <input type="file" id="actual-btn" hidden />
+      <label for="actual-btn" class="btn-act">No file chosen</label>
+    </div>
+    <!--sections-->
+    <div class="section-1">
+      <h1>Personal Details</h1>
+      <hr />
+      <div class="personal-info">
+      
+      </div>
+      
+      <button class="open-button" id="open-button" onclick="openForm()">Add info</button>
+      <div class="personal-biography">
+
+      </div>
+      <button class="bio-open-button" id="bio-open-button" onclick="openFormBio()">Add Biography</button>
+      <div class="form-popup" id="myForm">
+        <form  class="form-container">
+          <h1>Personal Info</h1>
+          <input type="checkbox" id="name-check" onclick="nameChecked()" >
+          <label for="email"><b>Name</b></label>
+          <input
+            type="text"
+            class="name-input"
+            placeholder="Name"
+            required
+          />
+          <input type="checkbox" id="email-check" onclick="emailChecked()" >
+          <label for="email"><b>Email</b></label>
+          <input
+            type="text"
+            class="email-input"
+            placeholder="Enter Email"
+            required
+          />
+          <input type="checkbox" id="number-check" onclick="numberChecked()" >
+          <label for="number"><b>Number</b></label>
+          <input
+            type="text"
+            class="number-input"
+            placeholder="Enter Number"
+            required
+          />
+        <button type="button" class="btn-add" onclick="addedInfo()">Add</button>
+        <button type="button" class="btn-cancel" onclick="closeForm()">
+        </form>
+
+      
+          Close
+        </button>
+      </div>
+
+       <div class="form-popup" id="myFormBio">
+        <form  class="form-container">
+          <h1>Personal Info</h1>
+          
+          <label for="email"><b>Biography</b></label><br>
+          <textarea
+            type="text"
+            class="bio-input"
+            placeholder="Bio"
+            required
+            style="padding: 10px;margin-top: 5px;
+            width: 200px;
+            height: 100px;"
+          ></textarea>
+         
+        <button type="button" class="btn-add" onclick="addedInfoBio()">Add</button>
+        <button type="button" class="btn-cancel" onclick="closeFormBio()">
+        </form>
+
+      
+          Close
+        </button>
+      </div>
+
+    </div>
+   <div class="section-2">
+      <h1>Educational Information</h1>
+      <hr />
+      
+        <div class="educational-info">
+        
+        </div>
+     
+      <button class="educational-open-button" id="educational-open-button" onclick="openFormEducational()">Add info</button>
+        <div class="form-popup" id="myFormEducational">
+        <form  class="form-container">
+          <h1>Educational Info</h1>
+          
+          <label for="name"><b>Degree/Certificate Name</b></label>
+          <input
+            type="text"
+            class="name-input-educational"
+            placeholder="Name"
+            required
+          />
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Institutes</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="#Fast NU" >Fast NU</a>
+            <a href="#MIT" >MIT</a>
+            <a href="#Harvard" >Harvard</a>
+            <a href="#NUST" >NUST</a>
+            <a href="#PIEAS" >PIEAS</a>
+            <a href="#Udemy" >Udemy</a>
+            <a href="#Edureka" >Edureka</a>
+          </div>
+        </div>
+        <button type="button" class="btn-add" onclick="addedInfoEducational()">Add</button>
+        <button type="button" class="btn-cancel" onclick="closeFormEducational()">
+        </form>
+          Close
+        </button>
+      </div>
+   </div>
+   <div class="section-3">
+     <h1>Professional Information</h1>
+      <hr />
+      
+        <div class="professional-info-skills">
+      
+        </div>
+        <button class="professional-open-button-skills" id="professional-open-button-skills" onclick="openFormProfessionalSkills()">Add Skills</button>
+        <div class="professional-info-experience">
+        
+        </div>
+        <button class="professional-open-button-experience" id="professional-open-button-experience" onclick="openFormProfessionalExperience()">Add Experience</button>
+        <div class="professional-info-projects">
+        
+        </div>
+          
+          
+          <button class="professional-open-button-projects" id="professional-open-button-projects" onclick="openFormProfessionalProjects()">Add Projects</button>
+      <div class="form-popup" id="myFormProfessionalSkills">
+        <form  class="form-container">
+          <h1>Professional Info Skills</h1>
+          
+          <label for="skills"><b>Skills</b></label>
+          <input
+            type="text"
+            class="skills"
+            placeholder="Skills"
+            required
+          />
+          
+          <label for="level" ><b>Level</b></label>
+          <select name="level" id="level">
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Expert">Expert</option>
+          </select>
+        
+        <button type="button" class="btn-add" onclick="addedInfoProfessionalSkills()">Add</button>
+        <button type="button" class="btn-cancel" onclick="closeFormProfessionalSkills()">
+        </form>
+
+      
+          Close
+        </button>
+
+      </div>
+            <div class="form-popup" id="myFormProfessionalExperience">
+        <form  class="form-container">
+          <h1>Professional Info Experience</h1>
+          
+          <label for="name"><b>Company Name</b></label>
+          <input
+            type="text"
+            class="company-name"
+            placeholder="Name"
+            required
+          />
+           <label for="Duration"><b>Duration</b></label>
+          <input
+            type="text"
+            class="duration"
+            placeholder="duration"
+            required
+          />
+        <button type="button" class="btn-add" onclick="addedInfoProfessionalExperience()">Add</button>
+        <button type="button" class="btn-cancel" onclick="closeFormProfessionalExperience()">
+        </form>
+
+      
+          Close
+        </button>
+        
+      </div>
+            <div class="form-popup" id="myFormProfessionalProjects">
+        <form  class="form-container">
+          <h1>Professional Info Projects</h1>
+          
+          <label for="project-name"><b>Project Name</b></label>
+          <input
+            type="text"
+            class="project-name"
+            placeholder="Name"
+            required
+          />
+           <label for="time"><b>Time Spent</b></label>
+          <input
+            type="text"
+            class="time-spent"
+            placeholder="Time Spent"
+            required
+          />
+        <button type="button" class="btn-add" onclick="addedInfoProfessionalProjects()">Add</button>
+        <button type="button" class="btn-cancel" onclick="closeFormProfessionalProjects()">
+        </form>
+
+      
+          Close
+        </button>
+        
+      </div>
+    </div>
+
+
+    <div class="social">
+      <a href="https://www.facebook.com/u.sardar/" target="blank"
+        ><img src="./images/facebook-512.png" alt="" />
+      </a>
+      <a href="https://www.instagram.com/i.am.hamzamalik/" target="blank"
+        ><img src="./images/174855.png" alt=""
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/hamza-malik-844652190/"
+        target="blank"
+        ><img src="./images/linkedin-208-916919.png" alt="" />
+      </a>
+      <a href="https://twitter.com/usardar12" target="blank"
+        ><img src="./images/077_twitter-512.png"
+      /></a>
+    </div>
+    <button class="display-profile" onclick="displayProfile()">View Profile</button>
+    <footer>
+      <p class="text-footer">Hamza Web Design, Copyright &copy; 2021</p>
+    </footer>
+    
+  </body>
+</html>

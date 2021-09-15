@@ -1,0 +1,395 @@
+ul {
+  list-style: none;
+  margin: 5px;
+}
+a {
+  text-decoration: none;
+}
+#main {
+  padding: 30px 50px;
+  box-sizing: border-box;
+  background-size: 1330px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.logo-heading {
+  font-size: x-large;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: rgb(61, 61, 61);
+  margin-left: 15px;
+  transition: all ease 0.3s;
+}
+.logo-heading:hover {
+  text-decoration: line-through;
+  font-weight: bold;
+  color: #696767;
+}
+nav {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: calibri;
+
+  box-sizing: border-box;
+  padding: 10px 50px;
+  background-color: #f4f7ff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+.nav-logo {
+  display: flex;
+}
+.menu {
+  display: flex;
+}
+.menu a {
+  padding: 10px 15px;
+  color: #6c707c;
+  font-size: 12px;
+}
+
+.active a,
+.menu a:hover {
+  background-color: #292929;
+  color: #fff !important;
+  font-weight: bold;
+  transition: all ease 0.4s;
+}
+.name {
+  font-family: calibri;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 40px;
+}
+.pic-place {
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: 7%;
+  margin-bottom: 20px;
+}
+.pic-place > span {
+  display: block;
+  font-size: xx-large;
+  margin: 30%;
+
+  color: white;
+}
+.name > img {
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: 7%;
+  margin-bottom: 20px;
+  display: none;
+}
+.name > img:hover {
+  box-shadow: 5px 5px 30px rgb(0, 0, 0);
+}
+.btn-act {
+  background-color: rgb(87, 86, 86);
+  color: white;
+  padding: 12px 12px;
+  cursor: pointer;
+  margin-left: 60px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40%;
+  margin-top: 2%;
+}
+.social img {
+  margin: 6px 15px;
+  width: 40px;
+  height: 40px;
+}
+.social img:hover {
+  box-shadow: 5px 5px 30px white;
+  border-radius: 40%;
+  transition: all ease 0.1s;
+  width: 35px;
+  height: 35px;
+}
+
+nav > img {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  width: 90px;
+  height: 80px;
+}
+nav > img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+footer {
+  padding: 20px;
+  margin: 60px;
+  margin-top: 20px;
+  background-color: #f4f7ff;
+  text-align: center;
+}
+.text-footer {
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: calibri;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 30px;
+  margin: 0px;
+  letter-spacing: 3px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.btn-add {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.btn-cancel {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover,
+.educational-open-button:hover,
+.professional-open-button-skills:hover,
+.professional-open-button-experience:hover,
+.professional-open-button-projects:hover,
+.bio-open-button:hover {
+  opacity: 1;
+}
+.section-1,
+.section-2,
+.section-3 {
+  margin-bottom: 15px;
+  background-color: #f4f7ff;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding: 5px;
+}
+.open-button,
+.educational-open-button,
+.professional-open-button-skills,
+.professional-open-button-experience,
+.professional-open-button-projects,
+.bio-open-button {
+  margin-left: 10%;
+  margin-top: 10px;
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+
+  bottom: 23px;
+  right: 28px;
+}
+
+.personal-info-list,
+.educational-info-list,
+.professional-info-list-skills,
+.professional-info-list-experience,
+.professional-info-list-projects,
+.personal-info-list-bio {
+  display: flex;
+  justify-content: space-between;
+  background-color: #555;
+  border-radius: 5%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-top: 10px;
+}
+.close-personal-info,
+.close-educational-info,
+.close-professional-info-skills,
+.close-professional-info-experience,
+.close-professional-info-projects {
+  color: #f1f1f1;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(248, 79, 79);
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+}
+.close-personal-info-bio {
+  height: 20px;
+  color: #f1f1f1;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(248, 79, 79);
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+}
+.close-personal-info:hover,
+.close-educational-info:hover,
+.close-professional-info-skills:hover,
+.close-professional-info-experience:hover,
+.close-professional-info-project:hover,
+.close-personal-info-bio:hover {
+  color: black;
+  background-color: rgb(250, 158, 158);
+}
+li {
+  color: #f1f1f1;
+  font-weight: bold;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #6b6b6b;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+  bottom: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+select {
+  margin: 10px;
+  width: 7rem;
+  height: 2rem;
+  transition: all ease-in-out 0.3s;
+}
+select:hover {
+  background-color: rgb(214, 209, 209);
+}
+.display-profile {
+  border-radius: 1%;
+  padding: 10px;
+  margin-left: 80%;
+  background-color: #f4f7ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  border: none;
+}
+.display-profile:hover {
+  background-color: rgb(51, 50, 50);
+  color: #ffffff;
+  -webkit-transform: rotate(12deg);
+  transform: rotate(12deg);
+}
